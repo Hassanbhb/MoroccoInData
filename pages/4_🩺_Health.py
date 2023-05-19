@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.buy_me_a_coffee import button
 import pandas as pd
 import plotly.express as px
 from functions import *
@@ -211,3 +212,5 @@ with DEATH_CAUSES_TAB:
     st.caption("""
       [Global Health Estimates 2020: Deaths by Cause, Age, Sex, by Country and by Region, 2000-2019. Geneva, World Health Organization; 2020.](https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death)
     """)
+
+button(username="hassanbhb", floating=False, width=221)

@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.buy_me_a_coffee import button
 import plotly.express as px
 from functions import *
 
@@ -329,3 +330,6 @@ with TERTIARY_TAB:
       [World Bank - Tetiary enrollement (%gross) - Female](https://data.worldbank.org/indicator/SE.TER.ENRR.FE) \n
       [World Bank - pupil-teacher ratio](https://data.worldbank.org/indicator/SE.TER.ENRL.TC.ZS?locations=MA)
     """)
+
+
+button(username="hassanbhb", floating=False, width=221)

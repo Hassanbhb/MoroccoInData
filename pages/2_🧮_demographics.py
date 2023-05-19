@@ -3,6 +3,7 @@ import plotly.graph_objects as go
 import numpy as np
 import streamlit as st
 import  streamlit_vertical_slider  as svs
+from streamlit_extras.buy_me_a_coffee import button
 from functions import *
 
 st.set_page_config(
@@ -286,3 +287,5 @@ with DEATH_TAB:
       [World Bank - Suicide rate](https://data.worldbank.org/indicator/SH.STA.SUIC.P5?locations=MA) - [male](https://data.worldbank.org/indicator/SH.STA.SUIC.MA.P5?locations=MA) - [female](https://data.worldbank.org/indicator/SH.STA.SUIC.FE.P5?locations=MA)\n
       [World Bank - Deaths by age group - 5-9](https://data.worldbank.org/indicator/SH.DTH.0509?locations=MA) - [10-14](https://data.worldbank.org/indicator/SH.DTH.1014?locations=MA) - [15-19](https://data.worldbank.org/indicator/SH.DTH.1519?locations=MA) - [20-24](https://data.worldbank.org/indicator/SH.DTH.2024?locations=MA)
     """)
+
+button(username="hassanbhb", floating=True, width=221)
