@@ -2,6 +2,7 @@ import streamlit as st
 import plotly.express as px
 from functions import get_map_data
 from PIL import Image
+from streamlit_extras.buy_me_a_coffee import button
 
 st.set_page_config(
     page_icon="📊",
@@ -9,12 +10,15 @@ st.set_page_config(
     initial_sidebar_state="expanded",
     )
 
-logo = Image.open('./logo.jpg')
+button(username="hassanbhb", floating=True, width=221)
+
+logo = Image.open('./assets/logo.jpg')
 st.image(logo, use_column_width=True)
 
 st.write("""
   Welcome to Morocco in data, \n 
-  where you can access consolidated data on Morocco's demographics, economy and more. We've gathered information from multiple sources, ensuring you have a comprehensive view in one convenient place. Explore key indicators, trends, and insights to deepen your understanding of Morocco's progress and challenges across these vital sectors and Gain better understanding of the country's development landscape.
+  where you can access consolidated data on Morocco's demographics, economy and more. We've gathered information from multiple sources, ensuring you have a comprehensive view in one convenient place. Explore key indicators, trends, and insights to deepen your understanding of Morocco's progress and challenges across these vital sectors and Gain better understanding of the country's development landscape. \n
+  Please consider supporting the project ❤
   ### 2014 Census Data Visualized
 """)
 
