@@ -1,6 +1,8 @@
 import plotly.express as px
 import streamlit as st
 from functions import *
+from streamlit_extras.buy_me_a_coffee import button
+
 
 st.set_page_config(
     page_icon="💸",
@@ -82,9 +84,9 @@ with GDP_TAB:
 
 with TRADE_TAB:
     # EXPORT / IMPORT BY PARTNER
-    df_export = eco_load_and_transform("./Morocco export to by partner in 2020_.csv",
+    df_export = eco_load_and_transform("./data/Morocco export to by partner in 2020_.csv",
                                        'Gross Export', 'GE')
-    df_import = eco_load_and_transform("./Morocco import from by partner in 2020_.csv",
+    df_import = eco_load_and_transform("./data/Morocco import from by partner in 2020_.csv",
                                        'Gross Import', "GI")
 
     # Radio btns
@@ -144,10 +146,10 @@ with TRADE_TAB:
 
     # --------------- BY PRODUCT ------------------#
 
-    df_export_product = eco_load_and_transform("./Morocco export by product in 2020_.csv",
+    df_export_product = eco_load_and_transform("./data/Morocco export by product in 2020_.csv",
                                                "Gross Export", "GE")
     df_import_product = eco_load_and_transform(
-        "././Morocco import by product in 2020_.csv", "Gross Import", "GI")
+        "./data/Morocco import by product in 2020_.csv", "Gross Import", "GI")
 
     if Type == "Exports":
         productsInfo = get_product_variables(Type, df_export_product)
@@ -291,3 +293,5 @@ with LABOR_TAB:
             [World Bank - Unemployment, total](https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=MA) - 
             [female](https://data.worldbank.org/indicator/SL.UEM.TOTL.FE.ZS?locations=MA) - [Male](https://data.worldbank.org/indicator/SL.UEM.TOTL.MA.ZS?locations=MA)
         """)
+
+button(username="hassanbhb", floating=False, width=221)
