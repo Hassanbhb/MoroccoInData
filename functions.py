@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import json
-import geopandas as gpd
 
 
 def human_format(num):
@@ -27,33 +26,33 @@ def eco_load_and_transform(url, Gross, g):
 
 st.cache_data
 def get_map_data():
-    regions = open("./morocco-with-regions_.geojson", encoding="utf-8")
+    regions = open("./data/morocco-with-regions_.geojson", encoding="utf-8")
     regions_map = json.loads(regions.read())
-    df = pd.read_csv("./Map_data.csv")
+    df = pd.read_csv("./data/Map_data.csv")
     df["population_r"] = df["population"].apply(lambda x: human_format(x))
     return regions_map, df
 
 st.cache_data
 def get_eco_data():
-    df = pd.read_csv("./Morocco eco data.csv")
+    df = pd.read_csv("./data/Morocco eco data.csv")
     return df
 
 st.cache_data
 def get_demographics_data():
-    df = pd.read_csv('./demographics data.csv')
+    df = pd.read_csv('./data/demographics data.csv')
     return df
 
 st.cache_data
 def get_education_data():
-    df = pd.read_csv('./education data.csv')
+    df = pd.read_csv('./data/education data.csv')
     return df
 
 # this returns a typle
 st.cache_data
 def get_Health_data():
-    df = pd.read_csv('./health data.csv')
-    df_causes_Males = pd.read_csv("./top_10_deaths_causes_males.csv")
-    df_causes_females = pd.read_csv("./top_10_deaths_causes_females.csv")
+    df = pd.read_csv('./data/health data.csv')
+    df_causes_Males = pd.read_csv("./data/top_10_deaths_causes_males.csv")
+    df_causes_females = pd.read_csv("./data/top_10_deaths_causes_females.csv")
     return df, df_causes_Males, df_causes_females
 
 # ------- economy data -----
