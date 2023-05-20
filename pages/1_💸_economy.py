@@ -295,3 +295,10 @@ with LABOR_TAB:
         """)
 
 button(username="hassanbhb", floating=False, width=221)
+
+hide = """
+  <style>
+  footer { visibility: hidden; }
+  </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
