@@ -61,3 +61,10 @@ st.plotly_chart(data_fig, use_container_width=True)
 
 with st.expander("Source"):
     st.caption("2014 Census - Morocco, Haut-commisariat au plan")
+
+hide = """
+  <style>
+  footer { visibility: hidden; }
+  </style>
+"""
+st.markdown(hide, unsafe_allow_html=True)
