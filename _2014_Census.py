@@ -57,6 +57,7 @@ data_fig = px.bar(df,
               color_discrete_sequence=px.colors.qualitative.Pastel,
             )
 data_fig.update_traces(hovertemplate=" <b>%{x}</b> <br> "+ data_type.capitalize() +": %{y:} <extra></extra>")
+data_fig.update_layout(showlegend=False)
 st.plotly_chart(data_fig, use_container_width=True)
 
 with st.expander("Source"):
