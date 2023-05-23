@@ -8,7 +8,10 @@ st.set_page_config(
     page_icon="📊",
     page_title="2014 Cencus",
     initial_sidebar_state="expanded",
-    )
+    menu_items={
+        'About': "Made by [@hassan_bhb](https://twitter.com/hassan_bhb)"
+    }
+  )
 
 button(username="hassanbhb", floating=True, width=221)
 
