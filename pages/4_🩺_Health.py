@@ -213,7 +213,6 @@ with DEATH_CAUSES_TAB:
       [Global Health Estimates 2020: Deaths by Cause, Age, Sex, by Country and by Region, 2000-2019. Geneva, World Health Organization; 2020.](https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death)
     """)
 
-button(username="hassanbhb", floating=False, width=221)
 
 hide = """
   <style>

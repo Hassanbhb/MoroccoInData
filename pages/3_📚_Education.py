@@ -332,8 +332,6 @@ with TERTIARY_TAB:
     """)
 
 
-button(username="hassanbhb", floating=False, width=221)
-
 hide = """
   <style>
   footer { visibility: hidden; }

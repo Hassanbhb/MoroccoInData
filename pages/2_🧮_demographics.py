@@ -288,7 +288,6 @@ with DEATH_TAB:
       [World Bank - Deaths by age group - 5-9](https://data.worldbank.org/indicator/SH.DTH.0509?locations=MA) - [10-14](https://data.worldbank.org/indicator/SH.DTH.1014?locations=MA) - [15-19](https://data.worldbank.org/indicator/SH.DTH.1519?locations=MA) - [20-24](https://data.worldbank.org/indicator/SH.DTH.2024?locations=MA)
     """)
 
-button(username="hassanbhb", floating=True, width=221)
 
 hide = """
   <style>

@@ -294,7 +294,6 @@ with LABOR_TAB:
             [female](https://data.worldbank.org/indicator/SL.UEM.TOTL.FE.ZS?locations=MA) - [Male](https://data.worldbank.org/indicator/SL.UEM.TOTL.MA.ZS?locations=MA)
         """)
 
-button(username="hassanbhb", floating=False, width=221)
 
 hide = """
   <style>
